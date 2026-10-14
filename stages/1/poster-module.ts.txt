@@ -1,0 +1,5 @@
+import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
+export default buildModule("PosterModule", (m) => {
+    const poster = m.contract("Poster", ["0x0000000000000000000000000000000000000000", 0n]);
+    return { poster };
+});
